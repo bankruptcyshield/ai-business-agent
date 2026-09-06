@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>AI Business Operations Agent</title>
+
+ <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+      <div>
+        <h1>AI Business Operations Agent</h1>
+
+        <p class="subtitle">
+          Analyze customer messages and generate structured business actions.
+        </p>
+      </div>
+    </header>
+
+    <section class="card">
+
+      <label for="message">
+        Customer message
+      </label>
+
+      <textarea
+        id="message"
+        placeholder="Example: Hi, I need help opening a company in Florida and I need it done quickly. Can someone call me today?"
+      ></textarea>
+
+      <button id="analyzeBtn">
+        Analyze Message
+      </button>
+
+    </section>
+
+    <section
+      id="results"
+      class="card hidden"
+    >
+
+      <h2>AI Analysis</h2>
+
+      <div class="results-grid">
+
+        <div class="result-item">
+          <span class="label">Intent</span>
+          <span id="intent"></span>
+        </div>
+
+        <div class="result-item">
+          <span class="label">Priority</span>
+          <span id="priority"></span>
+        </div>
+
+        <div class="result-item">
+          <span class="label">Sentiment</span>
+          <span id="sentiment"></span>
+        </div>
+
+        <div class="result-item">
+          <span class="label">Lead Score</span>
+          <span id="leadScore"></span>
+        </div>
+
+        <div class="result-item">
+          <span class="label">Confidence</span>
+          <span id="confidence"></span>
+        </div>
+
+      </div>
+
+      <div class="result-block">
+        <h3>Extracted Data</h3>
+        <div
+          id="extractedData"
+          class="extracted-grid"
+        ></div>
+      </div>
+
+      <div class="result-block">
+        <h3>Recommended Next Action</h3>
+        <p id="nextAction"></p>
+      </div>
+
+      <div class="result-block">
+        <h3>Suggested Reply</h3>
+        <p id="reply"></p>
+      </div>
+
+      <button
+        id="crmBtn"
+        class="secondary-button"
+      >
+        Create CRM Task
+      </button>
+
+      <p
+        id="crmStatus"
+        class="crm-status hidden"
+      ></p>
+
+    </section>
+
+    <section class="card">
+
+      <div class="activity-header">
+        <h2>Activity Log</h2>
+
+        <button
+          id="refreshActivityBtn"
+          class="small-button"
+        >
+          Refresh
+        </button>
+      </div>
+
+      <div id="activityLog">
+        <p class="empty-state">
+          No activity yet.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+<script src="/app.js"></script>
+
+</body>
+</html>
