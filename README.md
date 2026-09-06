@@ -4,6 +4,18 @@ An AI-powered business operations assistant that transforms customer messages in
 
 Built with **Node.js, Express, JavaScript, and the OpenAI API**.
 
+## Live Demo
+
+Try the application:
+
+**https://ai-business-agent-gxk2.onrender.com/**
+
+Enter any customer message to see the AI analyze intent, priority, sentiment, lead quality, extracted data, recommended actions, and generate a suggested response.
+
+## Demo
+
+![AI Business Operations Agent Demo](assets/ai-business-agent-demo.png)
+
 ## What It Does
 
 A customer sends a message. The AI analyzes it and automatically generates:
